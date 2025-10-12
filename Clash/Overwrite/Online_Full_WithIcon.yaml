@@ -3,13 +3,13 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
+      - Available
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
       - 🇯🇵Japan
       - 🇺🇸America
       - 🇰🇷Korea
-      - Available
       - DIRECT
   - name: Available
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
