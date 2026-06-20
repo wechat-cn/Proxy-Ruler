@@ -1,0 +1,590 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+redir-port: 7893
+tproxy-port: 7894
+
+unified-delay: true
+geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 24
+tcp-concurrent: true
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+udp: true
+
+external-controller: 0.0.0.0:9090
+# external-ui: ui
+# external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+
+geox-url:
+  # geoip: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat'
+  # geosite: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat'
+  mmdb: 'https://geodata.kelee.one/Country-Masaiki.mmdb'
+  asn: 'https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb'
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - +.v2ex.com
+
+  skip-domain:
+    - Mijia Cloud
+
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - any:53
+  auto-route: true
+  auto-detect-interface: true
+
+# P2P下载端口
+listeners:
+- name: socks5-in-1
+  type: socks
+  port: 10808
+  listen: 0.0.0.0
+  udp: true
+  users: []
+  proxy: DIRECT
+
+dns:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - time.*.com
+    - ntp.*.com
+    - +.msftconnecttest.com
+  default-nameserver:
+    - 223.5.5.5
+    - 223.6.6.6
+  direct-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://119.29.29.29/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 223.5.5.5
+      - 119.29.29.29
+    "geosite:geolocation-!cn":
+      - 1.1.1.1
+      - 8.8.8.8
+  fallback: []
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+
+proxy-groups:
+  - name: 节点选择
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - Available
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - DIRECT
+  - name: Available
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    include-all: true
+    type: select
+  - name: Telegram
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    type: select
+    proxies:
+      - 节点选择
+      - 🇸🇬Singapore
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - Available
+      - DIRECT
+  - name: OpenAi
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
+    type: select
+    proxies:
+      - 🇯🇵Japan
+      - 🇸🇬Singapore
+      - 🇺🇸America
+      - 🇹🇼TaiWan
+      - 节点选择
+      - 🇭🇰HongKong
+      - 🇰🇷Korea
+      - Available
+      - DIRECT
+  - name: Youtube
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/youtube(4).png
+    type: select
+    proxies:
+      - 节点选择
+      - 🇸🇬Singapore
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - Available
+      - DIRECT
+  - name: Netflix
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/netflix(red).png
+    type: select
+    proxies:
+      - 节点选择
+      - 🇸🇬Singapore
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - Available
+      - DIRECT
+  - name: 巴哈姆特
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
+    type: select
+    proxies:
+      - 🇹🇼TaiWan
+      - 节点选择
+      - Available
+      - DIRECT
+  - name: 哔哩哔哩
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - Global-Direct
+      - 🇹🇼TaiWan
+      - 🇭🇰HongKong
+  - name: 国外媒体
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+    type: select
+    proxies:
+      - 节点选择
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - Available
+      - DIRECT
+  - name: 国内媒体
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - Available
+  - name: Google
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 🇺🇸America
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇰🇷Korea
+      - Available
+  - name: Microsoft
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 🇺🇸America
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇰🇷Korea
+      - Available
+  - name: Apple
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 🇺🇸America
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇰🇷Korea
+      - Available
+  - name: Steam
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/steam(1).png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 🇺🇸America
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇰🇷Korea
+      - Available
+  - name: Spotify
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/Spotify_02.png
+    type: select
+    include-all: true
+    filter: (?i)Spotify|声破天|声田|Music
+    proxies:
+      - 节点选择
+      - Available
+      - 🇭🇰HongKong
+      - 🇺🇸America
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - DIRECT 
+  - name: Global-Direct
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+  - name: BlockAD
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 应用净化
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 漏网之鱼
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    type: select
+    proxies:
+      - 节点选择
+      - DIRECT
+      - 🇭🇰HongKong
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇰🇷Korea
+      - Available
+  - name: 🇭🇰HongKong
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Hongkong(3).png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: 🇯🇵Japan
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: 🇺🇸America
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/US.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: 🇹🇼TaiWan
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/TW_01.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: 🇸🇬Singapore
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/SG_01.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: 🇰🇷Korea
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/KR_01.png
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: select
+    interval: 300
+    tolerance: 50
+  - name: GLOBAL
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    include-all: true
+    type: select
+    proxies:
+      - 节点选择
+      - Available
+      - Telegram
+      - OpenAi
+      - Youtube
+      - Netflix
+      - 巴哈姆特
+      - 哔哩哔哩
+      - 国外媒体
+      - 国内媒体
+      - Google
+      - Microsoft
+      - Apple
+      - Steam
+      - Spotify
+      - Global-Direct
+      - BlockAD
+      - 应用净化
+      - 漏网之鱼
+      - 🇭🇰HongKong
+      - 🇯🇵Japan
+      - 🇺🇸America
+      - 🇹🇼TaiWan
+      - 🇸🇬Singapore
+      - 🇰🇷Korea
+
+rule-providers:
+  LocalAreaNetwork:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Google:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Google.list
+    path: ./ruleset/Google.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
+    path: ./ruleset/Microsoft.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OpenAi:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/OpenAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Spotify:
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Spotify.list
+    path: ./ruleset/Spotify.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Epic:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+    path: ./ruleset/Epic.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Origin:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+    path: ./ruleset/Origin.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Sony:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+    path: ./ruleset/Sony.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Nintendo:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+    path: ./ruleset/Nintendo.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bahamut:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+    path: ./ruleset/Bahamut.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bilibili:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+    path: ./ruleset/Bilibili.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
+rules:
+  - "RULE-SET,LocalAreaNetwork,Global-Direct"
+  - "RULE-SET,UnBan,Global-Direct"
+  - "RULE-SET,BanAD,BlockAD"
+  - "RULE-SET,BanProgramAD,应用净化"
+  - "RULE-SET,Google,Google"
+  - "RULE-SET,Microsoft,Microsoft"
+  - "RULE-SET,Apple,Apple"
+  - "RULE-SET,Telegram,Telegram"
+  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,Spotify,Spotify"
+  - "RULE-SET,Epic,Steam"
+  - "RULE-SET,Origin,Steam"
+  - "RULE-SET,Sony,Steam"
+  - "RULE-SET,Steam,Steam"
+  - "RULE-SET,Nintendo,Steam"
+  - "RULE-SET,YouTube,Youtube"
+  - "RULE-SET,Netflix,Netflix"
+  - "RULE-SET,Bahamut,巴哈姆特"
+  - "RULE-SET,Bilibili,哔哩哔哩"
+  - "RULE-SET,ChinaMedia,国内媒体"
+  - "RULE-SET,ProxyMedia,国外媒体"
+  - "RULE-SET,ProxyGFWlist,节点选择"
+  - "RULE-SET,ChinaDomain,Global-Direct"
+  - "RULE-SET,ChinaCompanyIp,Global-Direct"
+  - "RULE-SET,Download,Global-Direct"
+  - "GEOIP,CN,Global-Direct"
+  - "MATCH,漏网之鱼"
