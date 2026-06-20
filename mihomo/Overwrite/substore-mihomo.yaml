@@ -441,7 +441,7 @@ rule-providers:
     format: text
     type: http
   OpenAi:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+    url: https://kelee.one/Tool/Loon/Lsr/AI.lsr
     path: ./ruleset/OpenAi.list
     behavior: classical
     interval: 86400
