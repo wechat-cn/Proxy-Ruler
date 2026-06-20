@@ -24,8 +24,8 @@ external-controller: 0.0.0.0:9090
 # external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 
 geox-url:
-  # geoip: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat'
-  # geosite: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat'
+  geoip: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat'
+  geosite: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat'
   mmdb: 'https://geodata.kelee.one/Country-Masaiki.mmdb'
   asn: 'https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb'
 
@@ -553,18 +553,18 @@ rules:
   - "RULE-SET,UnBan,Global-Direct"
   - "RULE-SET,BanAD,BlockAD"
   - "RULE-SET,BanProgramAD,应用净化"
+  - "RULE-SET,YouTube,Youtube"
   - "RULE-SET,Google,Google"
+  - "RULE-SET,OpenAi,OpenAi"
   - "RULE-SET,Microsoft,Microsoft"
   - "RULE-SET,Apple,Apple"
   - "RULE-SET,Telegram,Telegram"
-  - "RULE-SET,OpenAi,OpenAi"
   - "RULE-SET,Spotify,Spotify"
   - "RULE-SET,Epic,Steam"
   - "RULE-SET,Origin,Steam"
   - "RULE-SET,Sony,Steam"
   - "RULE-SET,Steam,Steam"
   - "RULE-SET,Nintendo,Steam"
-  - "RULE-SET,YouTube,Youtube"
   - "RULE-SET,Netflix,Netflix"
   - "RULE-SET,Bahamut,巴哈姆特"
   - "RULE-SET,Bilibili,哔哩哔哩"
