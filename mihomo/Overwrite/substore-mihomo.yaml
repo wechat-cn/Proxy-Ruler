@@ -547,10 +547,18 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  CustomDirect:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    path: ./ruleset/CustomDirect.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
   - "RULE-SET,LocalAreaNetwork,Global-Direct"
   - "RULE-SET,UnBan,Global-Direct"
+  - "RULE-SET,CustomDirect,Global-Direct"
   - "RULE-SET,BanAD,BlockAD"
   - "RULE-SET,BanProgramAD,应用净化"
   - "RULE-SET,YouTube,Youtube"
