@@ -1,2 +1,5 @@
 #ChangeIP DDNS
 DOMAIN-SUFFIX,dynamic-dns.net
+
+#CloudFlare Private IP DDNS
+DOMAIN-SUFFIX,local.notrue.org
