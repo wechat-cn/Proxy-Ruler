@@ -20,6 +20,7 @@ ipv6: true
 udp: true
 
 external-controller: 0.0.0.0:9090
+secret: "hsAsbEx0ZdNd3HB3CwWvHXnN"
 # external-ui: ui
 # external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 
@@ -65,7 +66,7 @@ listeners:
 - name: socks5-in-1
   type: socks
   port: 10808
-  listen: 0.0.0.0
+  listen: 127.0.0.1
   udp: true
   users: []
   proxy: DIRECT
@@ -73,7 +74,7 @@ listeners:
 dns:
   enable: true
   prefer-h3: true
-  listen: 0.0.0.0:1053
+  listen: 127.0.0.1:1053
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -123,11 +124,6 @@ proxy-groups:
       - 🇯🇵Japan
       - 🇺🇸America
       - 🇰🇷Korea
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
       - DIRECT
   - name: Available
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
