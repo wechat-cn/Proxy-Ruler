@@ -11,7 +11,6 @@ geo-auto-update: true
 geo-update-interval: 24
 tcp-concurrent: true
 find-process-mode: strict
-global-client-fingerprint: chrome
 
 allow-lan: true
 mode: rule
