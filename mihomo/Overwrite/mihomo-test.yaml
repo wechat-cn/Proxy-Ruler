@@ -112,12 +112,22 @@ proxy-groups:
     type: select
     proxies:
       - Available
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
-      -   
+      - 🇸🇬Singapore
       - 🇯🇵Japan
       - 🇺🇸America
       - 🇰🇷Korea
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - DIRECT
   - name: Available
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
@@ -128,6 +138,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -140,6 +155,11 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
     type: select
     proxies:
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇯🇵Japan
       - 🇸🇬Singapore
       - 🇺🇸America
@@ -154,6 +174,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -167,6 +192,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -180,6 +210,8 @@ proxy-groups:
     type: select
     proxies:
       - 🇹🇼TaiWan
+      - HK-Landing
+      - TW-Landing
       - 节点选择
       - Available
       - DIRECT
@@ -188,6 +220,8 @@ proxy-groups:
     type: select
     proxies:
       - Global-Direct
+      - HK-Landing
+      - TW-Landing
       - 🇹🇼TaiWan
       - 🇭🇰HongKong
   - name: 国外媒体
@@ -195,6 +229,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -208,6 +247,11 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -218,6 +262,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - DIRECT
       - 🇺🇸America
       - 🇭🇰HongKong
@@ -231,6 +280,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - DIRECT
       - 🇺🇸America
       - 🇭🇰HongKong
@@ -245,6 +299,11 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇺🇸America
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -258,6 +317,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - DIRECT
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇺🇸America
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -273,6 +337,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - Available
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇭🇰HongKong
       - 🇺🇸America
       - 🇹🇼TaiWan
@@ -303,6 +372,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - DIRECT
+      - HK-Landing
+      - SG-Landing
+      - TW-Landing
+      - JP-Landing
+      - US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
