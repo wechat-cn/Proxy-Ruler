@@ -114,7 +114,7 @@ proxy-groups:
       - Available
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
-      - 🇸🇬Singapore
+      -   
       - 🇯🇵Japan
       - 🇺🇸America
       - 🇰🇷Korea
@@ -314,31 +314,67 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Hongkong(3).png
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
+  - name: "HK-Landing"  
+    type: select
+    include-all: true
+    filter: "(?i)香港|HK|Hong Kong"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇯🇵Japan
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
+  - name: "JP-Landing"
+    type: select
+    include-all: true
+    filter: "(?i)日本|JP|Japan|东京|大阪"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇺🇸America
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/US.png
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
+  - name: "US-Landing"
+    type: select
+    include-all: true
+    filter: "(?i)美国|US|United States|美|洛杉矶|硅谷"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇹🇼TaiWan
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/TW_01.png
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
+  - name: "TW-Landing"
+    type: select
+    include-all: true
+    filter: "(?i)台湾|TW|Taiwan|台北|新北|台中"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇸🇬Singapore
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/SG_01.png
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
+  - name: "SG-Landing"
+    type: select
+    include-all: true
+    filter: "(?i)新加坡|SG|Singapore|狮城"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
+  - name: "UK-Landing"
+    type: select
+    include-all: true
+    filter: "(?i)英国|UK|United Kingdom|伦敦|Britain|Great Britain"
+    exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇰🇷Korea
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/KR_01.png
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
@@ -547,10 +583,18 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  CustomDirect:
+    url: https://raw.githubusercontent.com/wechat-cn/Proxy-Ruler/refs/heads/main/mihomo/Own/Ruleset/CustomDirect.list
+    path: ./ruleset/CustomDirect.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
   - "RULE-SET,LocalAreaNetwork,Global-Direct"
   - "RULE-SET,UnBan,Global-Direct"
+  - "RULE-SET,CustomDirect,Global-Direct"
   - "RULE-SET,BanAD,BlockAD"
   - "RULE-SET,BanProgramAD,应用净化"
   - "RULE-SET,YouTube,Youtube"
