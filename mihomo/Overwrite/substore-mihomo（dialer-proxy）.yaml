@@ -112,11 +112,11 @@ proxy-groups:
     type: select
     proxies:
       - Available
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -133,11 +133,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -150,11 +150,11 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
     type: select
     proxies:
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇯🇵Japan
       - 🇸🇬Singapore
       - 🇺🇸America
@@ -169,11 +169,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -187,11 +187,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -205,8 +205,8 @@ proxy-groups:
     type: select
     proxies:
       - 🇹🇼TaiWan
-      - HK-Landing
-      - TW-Landing
+      - 🇭🇰HK-Landing
+      - 🇹🇼TW-Landing
       - 节点选择
       - Available
       - DIRECT
@@ -215,8 +215,8 @@ proxy-groups:
     type: select
     proxies:
       - Global-Direct
-      - HK-Landing
-      - TW-Landing
+      - 🇭🇰HK-Landing
+      - 🇹🇼TW-Landing
       - 🇹🇼TaiWan
       - 🇭🇰HongKong
   - name: 国外媒体
@@ -224,11 +224,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -242,11 +242,11 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -257,11 +257,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - DIRECT
       - 🇺🇸America
       - 🇭🇰HongKong
@@ -275,11 +275,11 @@ proxy-groups:
     type: select
     proxies:
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - DIRECT
       - 🇺🇸America
       - 🇭🇰HongKong
@@ -294,11 +294,11 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇺🇸America
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -312,11 +312,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - DIRECT
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇺🇸America
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
@@ -332,11 +332,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - Available
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇭🇰HongKong
       - 🇺🇸America
       - 🇹🇼TaiWan
@@ -367,11 +367,11 @@ proxy-groups:
     proxies:
       - 节点选择
       - DIRECT
-      - HK-Landing
-      - SG-Landing
-      - TW-Landing
-      - JP-Landing
-      - US-Landing
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -385,7 +385,7 @@ proxy-groups:
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
-  - name: "HK-Landing"  
+  - name: "🇭🇰HK-Landing"  
     type: select
     include-all: true
     filter: "(?i)香港|HK|Hong Kong"
@@ -396,7 +396,7 @@ proxy-groups:
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
-  - name: "JP-Landing"
+  - name: "🇯🇵JP-Landing"
     type: select
     include-all: true
     filter: "(?i)日本|JP|Japan|东京|大阪"
@@ -407,7 +407,7 @@ proxy-groups:
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
-  - name: "US-Landing"
+  - name: "🇺🇸US-Landing"
     type: select
     include-all: true
     filter: "(?i)美国|US|United States|美|洛杉矶|硅谷"
@@ -418,7 +418,7 @@ proxy-groups:
     filter: (?i)台|新北|彰化|TW|Taiwan
     exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
-  - name: "TW-Landing"
+  - name: "🇹🇼TW-Landing"
     type: select
     include-all: true
     filter: "(?i)台湾|TW|Taiwan|台北|新北|台中"
@@ -429,12 +429,12 @@ proxy-groups:
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     exclude-filter: "(?i)ENC|SS|Landing|落地|家宽"
     type: select
-  - name: "SG-Landing"
+  - name: "🇸🇬SG-Landing"
     type: select
     include-all: true
     filter: "(?i)新加坡|SG|Singapore|狮城"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
-  - name: "UK-Landing"
+  - name: "🇬🇧UK-Landing"
     type: select
     include-all: true
     filter: "(?i)英国|UK|United Kingdom|伦敦|Britain|Great Britain"
