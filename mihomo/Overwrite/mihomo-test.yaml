@@ -434,7 +434,7 @@ proxy-groups:
     include-all: true
     filter: "(?i)新加坡|SG|Singapore|狮城"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
-  - name: "UK-Landing"
+  - name: "🇬🇧UK-Landing"
     type: select
     include-all: true
     filter: "(?i)英国|UK|United Kingdom|伦敦|Britain|Great Britain"
