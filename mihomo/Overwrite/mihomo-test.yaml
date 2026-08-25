@@ -117,6 +117,7 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -135,15 +136,13 @@ proxy-groups:
       - 节点选择
       - 🇭🇰HK-Landing
       - 🇸🇬SG-Landing
-      - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇯🇵Japan
-      - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: OpenAI
@@ -155,13 +154,11 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇯🇵Japan
       - 🇸🇬Singapore
       - 🇺🇸America
-      - 🇹🇼TaiWan
       - 节点选择
-      - 🇭🇰HongKong
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: Youtube
@@ -179,7 +176,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇯🇵Japan
       - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: Netflix
@@ -194,10 +190,8 @@ proxy-groups:
       - 🇺🇸US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
-      - 🇹🇼TaiWan
       - 🇯🇵Japan
       - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: 巴哈姆特
@@ -268,7 +262,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
       - 🇯🇵Japan
-      - 🇰🇷Korea
       - Available
   - name: Microsoft
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
@@ -335,7 +328,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
       - 🇯🇵Japan
-      - 🇰🇷Korea
       - Available
   - name: Spotify
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/Spotify_02.png
@@ -385,6 +377,7 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
