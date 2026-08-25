@@ -149,7 +149,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
     type: select
     proxies:
-      - 🇭🇰HK-Landing
+      - 节点选择
       - 🇸🇬SG-Landing
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
@@ -158,9 +158,7 @@ proxy-groups:
       - 🇯🇵Japan
       - 🇸🇬Singapore
       - 🇺🇸America
-      - 节点选择
       - Available
-      - DIRECT
   - name: Youtube
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/youtube(4).png
     type: select
