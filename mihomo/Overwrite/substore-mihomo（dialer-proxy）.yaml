@@ -117,6 +117,7 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -135,35 +136,29 @@ proxy-groups:
       - 节点选择
       - 🇭🇰HK-Landing
       - 🇸🇬SG-Landing
-      - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇯🇵Japan
-      - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
-  - name: OpenAi
+  - name: OpenAI
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
     type: select
     proxies:
-      - 🇭🇰HK-Landing
+      - 节点选择
       - 🇸🇬SG-Landing
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇯🇵Japan
       - 🇸🇬Singapore
       - 🇺🇸America
-      - 🇹🇼TaiWan
-      - 节点选择
-      - 🇭🇰HongKong
-      - 🇰🇷Korea
       - Available
-      - DIRECT
   - name: Youtube
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/youtube(4).png
     type: select
@@ -179,7 +174,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇯🇵Japan
       - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: Netflix
@@ -194,10 +188,8 @@ proxy-groups:
       - 🇺🇸US-Landing
       - 🇸🇬Singapore
       - 🇭🇰HongKong
-      - 🇹🇼TaiWan
       - 🇯🇵Japan
       - 🇺🇸America
-      - 🇰🇷Korea
       - Available
       - DIRECT
   - name: 巴哈姆特
@@ -268,7 +260,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
       - 🇯🇵Japan
-      - 🇰🇷Korea
       - Available
   - name: Microsoft
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
@@ -306,6 +297,19 @@ proxy-groups:
       - 🇯🇵Japan
       - 🇰🇷Korea
       - Available
+  - name: PayPal
+    icon: https://www.paypalobjects.com/marketing/web/logos/paypal-mark-color_new.svg
+    type: select
+    proxies:
+      - 🇬🇧UK-Landing
+      - 节点选择
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
+      - Available
+      - DIRECT
   - name: Steam
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/steam(1).png
     type: select
@@ -322,7 +326,6 @@ proxy-groups:
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
       - 🇯🇵Japan
-      - 🇰🇷Korea
       - Available
   - name: Spotify
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/Spotify_02.png
@@ -372,6 +375,7 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
       - 🇸🇬Singapore
@@ -453,7 +457,7 @@ proxy-groups:
       - 节点选择
       - Available
       - Telegram
-      - OpenAi
+      - OpenAI
       - Youtube
       - Netflix
       - 巴哈姆特
@@ -533,9 +537,16 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  OpenAi:
+  PayPal:
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.list
+    path: ./ruleset/PayPal.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OpenAI:
     url: https://kelee.one/Tool/Loon/Lsr/AI.lsr
-    path: ./ruleset/OpenAi.list
+    path: ./ruleset/OpenAI.list
     behavior: classical
     interval: 86400
     format: text
@@ -668,10 +679,11 @@ rules:
   - "RULE-SET,BanProgramAD,应用净化"
   - "RULE-SET,YouTube,Youtube"
   - "RULE-SET,Google,Google"
-  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,OpenAI,OpenAI"
   - "RULE-SET,Microsoft,Microsoft"
   - "RULE-SET,Apple,Apple"
   - "RULE-SET,Telegram,Telegram"
+  - "RULE-SET,PayPal,PayPal"
   - "RULE-SET,Spotify,Spotify"
   - "RULE-SET,Epic,Steam"
   - "RULE-SET,Origin,Steam"
