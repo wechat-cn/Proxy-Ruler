@@ -6,8 +6,5 @@ DOMAIN-SUFFIX,local.notrue.org
 
 #Steam-远光84
 PROCESS-NAME,SolarlandClient-Win64-Shipping.exe
-PROCESS-NAME,Solarland.exe
+PROCESS-NAME,limpcbrowserex.exe
 PROCESS-NAME,SolarlandClient.exe
-DOMAIN-SUFFIX,farlight84.com
-DOMAIN-SUFFIX,lilith.com
-DOMAIN-KEYWORD,farlight84
