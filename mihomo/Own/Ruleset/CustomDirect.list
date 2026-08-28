@@ -3,3 +3,12 @@ DOMAIN-SUFFIX,dynamic-dns.net
 
 #CloudFlare Private IP DDNS
 DOMAIN-SUFFIX,local.notrue.org
+
+#Steam-远光84
+- PROCESS-NAME,SolarlandClient-Win64-Shipping.exe,DIRECT
+- PROCESS-NAME,SolarlandClient-Win64-Shipping.exe,DIRECT
+- PROCESS-NAME,Solarland.exe,DIRECT
+- PROCESS-NAME,SolarlandClient.exe,DIRECT
+- DOMAIN-SUFFIX,farlight84.com,DIRECT
+- DOMAIN-SUFFIX,lilith.com,DIRECT
+- DOMAIN-KEYWORD,farlight84,DIRECT
