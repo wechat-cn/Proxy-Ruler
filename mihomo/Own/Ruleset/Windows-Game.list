@@ -1,0 +1,8 @@
+#Steam-远光84
+PROCESS-NAME,SolarlandClient-Win64-Shipping.exe
+PROCESS-NAME,limpcbrowserex.exe
+PROCESS-NAME,SolarlandClient.exe
+
+#CS2
+PROCESS-NAME,cs2.exe
+
