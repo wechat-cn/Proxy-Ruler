@@ -670,9 +670,17 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Windows-Game:
+    url: https://raw.githubusercontent.com/wechat-cn/Proxy-Ruler/refs/heads/main/mihomo/Own/Ruleset/Windows-Game.list
+    path: ./ruleset/Windows-Game.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
   - "RULE-SET,LocalAreaNetwork,Global-Direct"
+  - "RULE-SET,Windows-Game,Global-Direct"
   - "RULE-SET,UnBan,Global-Direct"
   - "RULE-SET,CustomDirect,Global-Direct"
   - "RULE-SET,BanAD,BlockAD"
