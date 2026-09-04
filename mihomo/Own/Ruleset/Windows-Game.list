@@ -6,3 +6,6 @@ PROCESS-NAME,SolarlandClient.exe
 #CS2
 PROCESS-NAME,cs2.exe
 
+#
+PROCESS-NAME,Discovery-d.exe
+PROCESS-NAME,Discovery-e.exe
