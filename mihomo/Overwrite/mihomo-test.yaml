@@ -128,6 +128,19 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
     type: select
+  - name: Speedtest
+    icon: https://r.cdnst.net/assets/favicon-CCUn3ywk.svg
+    type: select
+    proxies:
+      - 节点选择
+      - Available
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
+      - DIRECT
   - name: Telegram
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
@@ -273,19 +286,6 @@ proxy-groups:
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
       - Available
-      - DIRECT
-  - name: Speedtest
-    icon: https://r.cdnst.net/assets/favicon-CCUn3ywk.svg
-    type: select
-    proxies:
-      - 节点选择
-      - Available
-      - 🇭🇰HK-Landing
-      - 🇸🇬SG-Landing
-      - 🇹🇼TW-Landing
-      - 🇯🇵JP-Landing
-      - 🇺🇸US-Landing
-      - 🇬🇧UK-Landing
       - DIRECT
   - name: Steam
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/steam(1).png
