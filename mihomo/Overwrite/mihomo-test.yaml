@@ -160,6 +160,9 @@ proxy-groups:
   - name: OpenAI
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/chatGPT-green.png
     type: select
+    include-all: true
+    filter: "(?i)日本|东京|大阪|JP|Japan|新加坡|坡|狮城|SG|Singapore|美|美国|芝加哥|US|United States"
+    exclude-filter: "(?i)实验|标准|普通"
     proxies:
       - 节点选择
       - 🇸🇬SG-Landing
