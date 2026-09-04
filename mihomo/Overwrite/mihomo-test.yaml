@@ -162,7 +162,7 @@ proxy-groups:
     type: select
     include-all: true
     filter: "(?i)日本|东京|大阪|JP|Japan|新加坡|坡|狮城|SG|Singapore|美|美国|芝加哥|US|United States"
-    exclude-filter: "(?i)实验|标准|普通"
+    exclude-filter: "(?i)实验|标准|普通|ENC|SS"
     proxies:
       - 节点选择
       - 🇸🇬SG-Landing
@@ -170,9 +170,6 @@ proxy-groups:
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
       - 🇬🇧UK-Landing
-      - 🇯🇵Japan
-      - 🇸🇬Singapore
-      - 🇺🇸America
       - Available
   - name: Youtube
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/04ProxySoft/youtube(4).png
