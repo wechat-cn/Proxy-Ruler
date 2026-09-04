@@ -151,10 +151,6 @@ proxy-groups:
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
       - 🇬🇧UK-Landing
-      - 🇸🇬Singapore
-      - 🇭🇰HongKong
-      - 🇹🇼TaiWan
-      - 🇯🇵Japan
       - Available
       - DIRECT
   - name: OpenAI
@@ -222,7 +218,6 @@ proxy-groups:
       - 🇭🇰HK-Landing
       - 🇹🇼TW-Landing
       - 🇹🇼TaiWan
-      - 🇭🇰HongKong
   - name: Google
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
@@ -248,11 +243,8 @@ proxy-groups:
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
       - DIRECT
-      - 🇺🇸America
       - 🇭🇰HongKong
       - 🇹🇼TaiWan
-      - 🇸🇬Singapore
-      - 🇯🇵Japan
       - Available
   - name: Apple
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
@@ -265,11 +257,7 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
-      - 🇺🇸America
-      - 🇭🇰HongKong
       - 🇹🇼TaiWan
-      - 🇸🇬Singapore
-      - 🇯🇵Japan
       - Available
   - name: PayPal
     icon: https://www.paypalobjects.com/marketing/web/logos/paypal-mark-color_new.svg
@@ -314,11 +302,6 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
-      - 🇭🇰HongKong
-      - 🇺🇸America
-      - 🇹🇼TaiWan
-      - 🇸🇬Singapore
-      - 🇯🇵Japan
       - DIRECT 
   - name: Global-Direct
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
@@ -350,11 +333,6 @@ proxy-groups:
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
       - 🇬🇧UK-Landing
-      - 🇭🇰HongKong
-      - 🇹🇼TaiWan
-      - 🇸🇬Singapore
-      - 🇯🇵Japan
-      - 🇺🇸America
       - Available
   - name: 🇭🇰HongKong
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/01Country/Hongkong(3).png
