@@ -226,6 +226,9 @@ proxy-groups:
   - name: Google
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
+    include-all: true
+    filter: "(?i)日本|东京|JP|Japan|美|美国|US|United States"
+    exclude-filter: "(?i)实验|标准|普通|ENC|SS"
     proxies:
       - 节点选择
       - 🇭🇰HK-Landing
@@ -233,12 +236,6 @@ proxy-groups:
       - 🇹🇼TW-Landing
       - 🇯🇵JP-Landing
       - 🇺🇸US-Landing
-      - DIRECT
-      - 🇺🇸America
-      - 🇭🇰HongKong
-      - 🇹🇼TaiWan
-      - 🇸🇬Singapore
-      - 🇯🇵Japan
       - Available
   - name: Microsoft
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
