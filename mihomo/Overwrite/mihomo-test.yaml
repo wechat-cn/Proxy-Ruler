@@ -343,7 +343,7 @@ proxy-groups:
   - name: "🇭🇰HK-Landing"  
     type: select
     include-all: true
-    filter: "(?i)香港|HK|Hong Kong"
+    filter: "(?i)香港|\\bHK\\b|Hong Kong"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇯🇵Japan
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
@@ -354,7 +354,7 @@ proxy-groups:
   - name: "🇯🇵JP-Landing"
     type: select
     include-all: true
-    filter: "(?i)日本|JP|Japan|东京|大阪"
+    filter: "(?i)日本|\\bJP\\b|Japan|东京|大阪"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇺🇸America
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/US.png
@@ -365,7 +365,7 @@ proxy-groups:
   - name: "🇺🇸US-Landing"
     type: select
     include-all: true
-    filter: "(?i)美国|US|United States|美|洛杉矶|硅谷"
+    filter: "(?i)美国|\\bUS\\b|United States|美|洛杉矶|硅谷"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇹🇼TaiWan
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/TW_01.png
@@ -376,7 +376,7 @@ proxy-groups:
   - name: "🇹🇼TW-Landing"
     type: select
     include-all: true
-    filter: "(?i)台湾|TW|Taiwan|台北|新北|台中"
+    filter: "(?i)台湾|\\bTW\\b|Taiwan|台北|新北|台中"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: 🇸🇬Singapore
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/flag/SG_01.png
@@ -387,12 +387,12 @@ proxy-groups:
   - name: "🇸🇬SG-Landing"
     type: select
     include-all: true
-    filter: "(?i)新加坡|SG|Singapore|狮城"
+    filter: "(?i)新加坡|\\bSG\\b|Singapore|狮城"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: "🇬🇧UK-Landing"
     type: select
     include-all: true
-    filter: "(?i)英国|UK|United Kingdom|伦敦|Britain|Great Britain"
+    filter: "(?i)英国|\\bUK\\b|United Kingdom|伦敦|Britain|Great Britain"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
