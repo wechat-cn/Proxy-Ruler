@@ -394,33 +394,6 @@ proxy-groups:
     include-all: true
     filter: "(?i)英国|\\bUK\\b|United Kingdom|伦敦|Britain|Great Britain"
     exclude-filter: "(?i)实验|高级|专线|Transit|入口|直连"
-  - name: GLOBAL
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
-    include-all: true
-    type: select
-    proxies:
-      - 节点选择
-      - Available
-      - Telegram
-      - OpenAI
-      - Youtube
-      - Netflix
-      - 巴哈姆特
-      - 哔哩哔哩
-      - Google
-      - Microsoft
-      - Apple
-      - Steam
-      - Spotify
-      - Global-Direct
-      - BlockAD
-      - 应用净化
-      - 漏网之鱼
-      - 🇭🇰HongKong
-      - 🇯🇵Japan
-      - 🇺🇸America
-      - 🇹🇼TaiWan
-      - 🇸🇬Singapore
 
 rule-providers:
   LocalAreaNetwork:
