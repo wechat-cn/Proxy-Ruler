@@ -537,7 +537,7 @@ rule-providers:
     path: ./ruleset/SpeedtestInternational.list
     behavior: classical
     interval: 86400
-    format: text
+    format: yaml
     type: http
   Steam:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
