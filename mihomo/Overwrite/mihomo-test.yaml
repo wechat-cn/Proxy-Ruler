@@ -274,6 +274,19 @@ proxy-groups:
       - 🇺🇸US-Landing
       - Available
       - DIRECT
+  - name: Speedtest
+    icon: https://r.cdnst.net/assets/favicon-CCUn3ywk.svg
+    type: select
+    proxies:
+      - 节点选择
+      - Available
+      - 🇭🇰HK-Landing
+      - 🇸🇬SG-Landing
+      - 🇹🇼TW-Landing
+      - 🇯🇵JP-Landing
+      - 🇺🇸US-Landing
+      - 🇬🇧UK-Landing
+      - DIRECT
   - name: Steam
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/icons/apps/steam(1).png
     type: select
@@ -519,6 +532,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  SpeedtestInternational:
+    url: https://kelee.one/Tool/Clash/Rule/SpeedtestInternational.yaml
+    path: ./ruleset/SpeedtestInternational.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   Steam:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
     path: ./ruleset/Steam.list
@@ -611,6 +631,7 @@ rules:
   - "RULE-SET,Telegram,Telegram"
   - "RULE-SET,PayPal,PayPal"
   - "RULE-SET,Spotify,Spotify"
+  - "RULE-SET,SpeedtestInternational,Speedtest"
   - "RULE-SET,Epic,Steam"
   - "RULE-SET,Steam,Steam"
   - "RULE-SET,Microsoft,Microsoft"
